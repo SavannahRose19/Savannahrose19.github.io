@@ -1,0 +1,96 @@
+button 
+{
+    width: 150px;
+    height: 150px;   
+    padding: 20px;
+    box-sizing: border-box;
+    border: 2px solid #000;
+    justify-content: center;
+}
+
+body 
+{
+    background-image: url("tacooooo.jpeg");
+    background-size: 300px 300px; 
+    background-repeat: repeat;
+    background-position: center;
+}
+
+#restartButton 
+{
+    width: 100px;            
+    height: 75px;            
+    font-size: 20px;         
+    background-color: rgb(0, 0, 0); 
+    border: none;           
+    border-radius: 5px;     
+    color: white;          
+    cursor: pointer;        
+}
+
+nav 
+{
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    background-color: #e59555;
+    padding-top: 50px;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    box-sizing: border-box;
+    font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+}
+
+nav h2 
+{
+    font-size: 26px;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    padding-left: 20px;
+}
+
+nav a 
+{
+    display: block;
+    padding: 20px 25px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+}
+
+nav a:hover 
+{
+    background-color: #ffb10d;
+    color: #333;
+    border-left: 10px solid #333;
+}
+
+footer 
+{
+    margin-top: 50px;
+    padding: 20px;
+    background-color:#e79655;
+    color: #fff;
+    border-top: 3px solid #000000;
+    font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+    position: relative;
+    text-align: center;
+}
+
+h1 
+{
+    font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+    font-size: 60px;
+    font-weight: bold;
+    color: #cfbb8b;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+    text-transform: uppercase;
+    margin: 0;
+}

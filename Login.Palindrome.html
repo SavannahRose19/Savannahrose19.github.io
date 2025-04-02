@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Savannah McDowell Assignment 4.1 Incorporate Audio -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taco Cat</title>
+    <link rel="stylesheet" href="Login.Palindrome.css" type="text/css">
+    <script src="Login.Palindrome.js"></script>
+</head>
+<body>
+    <!-- The div tag defines this section in the HTML document with the id "container"
+         which groups the content inside the tag -->
+    <div id="container">
+        <header>
+            <h1>Do you want tacos?</h1>
+            </header>
+        <!-- h1 creates the header -->
+        <img id="cat" src="instructions-tacocat.webp.png" alt="Taco Cat">
+        <br>
+         <!-- Creates an audio element with built-in controls for play, pause, and volume -->
+        <audio controls>
+            
+          <!-- Specifies the source file for the audio element-->
+         <!-- The type attribute defines the media type of the audio file, which is "audio/mpeg" for MP3 files -->
+            <source src="raining-tacos.mp3" type="audio/mpeg">
+            
+           <!-- Closes the audio element -->
+          </audio>
+         
+        <br>
+       
+        <nav>
+            <h2>Navigation</h2>
+            <a href="index.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="battleship.html">Game</a>
+            <a href="boards.html">Objectives</a>
+        </nav>
+        <!-- Creates a paragraph -->
+        <p>Enter your information into the fields below<br> and win free tacos for life!</p>
+        
+        <!-- Creates a form that can be styled in CSS with the id "paliForm" -->
+        <form id="paliForm">
+            <!-- Creates the input field for the user to enter the palindrome. The id allows the field to be styled via CSS.
+                 The placeholder creates filler text that makes the input field more user-friendly -->
+            <input type="text" id="userInput" placeholder="Palindrome">
+            
+            <!-- Creates the input fields for the user's first and last names -->
+            <input type="text" id="firstName" placeholder="First Name">
+            <input type="text" id="lastName" placeholder="Last Name">
+            
+            <!-- Creates the input field for the user's zip code. The input type is "number" to restrict input to numeric values only -->
+            <input type="number" id="zipCode" placeholder="Zip Code">
+           
+            <br><br>
+            <!-- Creates a submit button that, when clicked, will trigger the form validation and secret message display -->
+            <button type="button" onclick="validateAndSubmit()">Check</button>
+        </form>
+        
+        <!-- This paragraph is used to display the result of the palindrome check by using the result identifier
+             that was created in the JavaScript file -->
+        <p id="paliResult"></p>
+        <!-- This paragraph is used to display the secret message if all inputs are valid -->
+        <p id="secretMessage" style="display: none;">Congratulations! You've won free tacos for life!</p>
+    </div>
+    <footer>
+        Savannah McDowell<br>
+        University of Advancing Technology<br>
+        2625 W Baseline Rd<br>
+        Tempe, AZ 85283
+    </footer>
+</body>
+</html>

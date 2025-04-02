@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taco Table</title>
+    <link rel="stylesheet" href="menu.css">
+</head>
+<body>
+    <header>
+        <h1>Here's our menu</h1>
+    </header>
+    <nav>
+        <h2>Navigation</h2>
+        <a href="index.html">Home</a>
+        <a href="Login.Palindrome.html">Free Tacos?</a>
+        <a href="Battleship.html">Game</a>
+        <a href="Boards.html">Objectives</a>
+    </nav>
+    <br><br><br>
+    <div class="container">
+        <table id="taco-table">
+            <tr id="table-header">
+                <th id="column-type">Type</th>
+                <th id="column-ingredients">Ingredients</th>
+                <th id="column-price">Price</th>
+            </tr>
+            <tr id="row1">
+                <td>Carnitas Taco</td>
+                <td>Pork, cilantro, onions, lime</td>
+                <td>$3.99</td>
+            </tr>
+            <tr id="row2">
+                <td>Fish Taco</td>
+                <td>Fish, cabbage, avocado, lime</td>
+                <td>$4.99</td>
+            </tr>
+            <tr id="row3">
+                <td>Chicken Taco</td>
+                <td>Chicken, lettuce, cheese, salsa</td>
+                <td>$2.99</td>
+            </tr>
+            <tr id="row4">
+                <td>Vegetarian Taco</td>
+                <td>Beans, lettuce, tomatoes, guacamole</td>
+                <td>$3.99</td>
+            </tr>
+        </table>
+        <button id="order-button" onclick="orderAlert()">Order Here</button>
+    </div>
+    <footer>
+        Savannah McDowell<br>
+        University of Advancing Technology<br>
+        2625 W Baseline Rd<br>
+        Tempe, AZ 85283
+    </footer>
+
+    <script>
+        function orderAlert() 
+        {
+            alert("Just kidding, go to the free tacos page!");
+        }
+    </script>
+</body>
+</html>

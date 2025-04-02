@@ -1,0 +1,118 @@
+body 
+{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-align: center;
+  background-image: url("tacobackground.jpg");
+  background-repeat: repeat;
+  background-size: 300px 300px;
+  background-position: center;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.container 
+{
+  position: relative;
+  width: 90%;
+  max-width: 900px;
+  margin: 0 auto;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.image 
+{
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+  border: 10px solid #fff;
+  box-shadow: 0px 4px 8px #000000;
+}
+
+.overlay 
+{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #259536e9;
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  transition: .5s ease;
+}
+
+.container:hover .overlay 
+{
+  width: 100%;
+  border-radius: 15px;
+  border: 10px solid #fff;
+}
+
+.text 
+{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  white-space: nowrap;
+  color: white;
+  font-size: 40px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  border-radius: 15px;
+  border: 10px solid #fff;
+}
+
+h1 
+{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 80px;
+  font-weight: bold;
+  color: #000000;
+  text-shadow: 4px 4px 4px #ffffff;
+  text-transform: uppercase;
+  margin: 20px 0;
+}
+
+#startButton 
+{
+  font-size: 30px;
+  padding: 10px 30px;
+  border-radius: 12px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#startButton:hover 
+{
+
+  background-color: #d5372f;
+  transform: scale(1.1);
+}
+
+#stopButton 
+{
+  font-size: 30px;
+  padding: 10px 30px;
+  border-radius: 12px;
+  background-color: #d5372f;
+  color: white;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#stopButton:hover 
+{
+  background-color: #4CAF50;
+  transform: scale(1.1);
+}
